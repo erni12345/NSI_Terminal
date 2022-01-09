@@ -1,0 +1,40 @@
+Qu’est-ce qui a permis la progression du monde numérique ?
+ -> La creation et miniaturisation des transistor
+
+
+
+De quoi est composé un circuit ?
+
+ -> 
+
+
+
+Quel est le nom de la loi qui gouverne la densité des circuits (des transistors) sur une puce ?
+
+ -> La loi de Moore
+
+Où travaillait Mr Moore ?
+
+ -> Intel
+
+
+Citez quelques types de circuits autres que les CPU.
+
+ -> GPU
+ -> RAM
+ 
+
+Quelle qualité présente le CPU ?
+
+ -> Haute capacite de Calcul
+
+
+Quel est son défaut principal ?
+-> Trop chaud, il faut un ventilateur
+
+
+Que font principalement les DSP, Digital Signal Processor ?
+
+-> Calcul Numerique --> ADdition Multiplication , Matrice etc
+
+Quels sont les 2 principaux avantages d’une intégration plus grande dans les puces ?
