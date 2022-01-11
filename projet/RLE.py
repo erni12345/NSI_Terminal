@@ -126,17 +126,13 @@ def read_pgm_file_decompress(file):
     Returns:
         Differents elements et caracteristique duu ficher (width, height, scale, header)
     """
+    texts = file.readlines()
+    header = texts[0]
+    width, height = [int(i) for i in texts[1].split()]
+    scale = int(texts[2])
+    image = [int(x) for x in texts[3:]]
 
-    header = file.readline()
-    width, height = [int(i) for i in file.readline().split()]
-    scale = int(file.readline())
-    image = []
-
-    for x in range(height * width):
-        var = file.readline()
-        var.strip()
-        if var != "":
-            image.append(int(var))
+    
 
 
     return image, width, height, scale, header
@@ -177,7 +173,6 @@ def run_decompress(file_name):
     with open(f"projet/{file_name}.pgm", "r") as ft:
         image, width, height, scale, header = read_pgm_file_decompress(ft)
         decompressed_image = decompress(image, width, height)
-
     with open(f"projet/{file_name}_deco.pgm", "w") as ft:
         ft.write(header)
         ft.write(f"{width} {height}" + "\n")
@@ -186,5 +181,5 @@ def run_decompress(file_name):
             ft.write(str(x) + '\n')
 
 
-run_compress("Logo_Python")
+run_decompress("franck_comp")
 
